@@ -37,10 +37,10 @@ A cross-platform terminal chat client for Google Gemini, built with [Textual](ht
 Open PowerShell in the project folder and run:
 
 ```powershell
-py -m pip install -r requirements-textual.txt
+py -m pip install -r requirements.txt
 ```
 
-Create a file named `api_key.txt` in the same folder as `chat_textual.py`. Paste only your Gemini API key into that file:
+Create a file named `api_key.txt` in the same folder as `chat.py`. Paste only your Gemini API key into that file:
 
 ```text
 AIzaSy-your-key-goes-here
@@ -49,14 +49,14 @@ AIzaSy-your-key-goes-here
 Start the application:
 
 ```powershell
-py chat_textual.py
+py chat.py
 ```
 
 If the `py` launcher is not available, use `python` instead:
 
 ```powershell
-python -m pip install -r requirements-textual.txt
-python chat_textual.py
+python -m pip install -r requirements.txt
+python chat.py
 ```
 
 ## Installation on macOS
@@ -64,13 +64,13 @@ python chat_textual.py
 Open Terminal in the project folder and run:
 
 ```bash
-python3 -m pip install -r requirements-textual.txt
+python3 -m pip install -r requirements.txt
 ```
 
-Create `api_key.txt` beside `chat_textual.py`, then start the application:
+Create `api_key.txt` beside `chat.py`, then start the application:
 
 ```bash
-python3 chat_textual.py
+python3 chat.py
 ```
 
 ## API-key security
@@ -156,8 +156,8 @@ These are convenience safeguards, not a complete security or moderation system. 
 
 ```text
 gemini-textual-chat/
-├── chat_textual.py
-├── requirements-textual.txt
+├── chat.py
+├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
@@ -182,14 +182,14 @@ The project uses:
 Install all dependencies with:
 
 ```powershell
-py -m pip install -r requirements-textual.txt
+py -m pip install -r requirements.txt
 ```
 
 ## Troubleshooting
 
 ### No models appear or the model list is incorrect
 
-Confirm that `api_key.txt` is in the same folder as `chat_textual.py` and contains only a valid Gemini API key. Restart the application after changing the key. The available model list depends on the API key, project, region, account, and current Google API availability.
+Confirm that `api_key.txt` is in the same folder as `chat.py` and contains only a valid Gemini API key. Restart the application after changing the key. The available model list depends on the API key, project, region, account, and current Google API availability.
 
 ### The assistant reports the wrong model
 
