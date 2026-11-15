@@ -218,3 +218,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project secrets
+api_key.txt
+.env
+
+# Local application data
+.gemini_sessions.json
+.tetris_high_score
+
+# Local editor settings
+.vscode/
